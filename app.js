@@ -4,8 +4,6 @@ const bodyParser = require('body-parser');
 const fs = require('fs');
 const path = require('path');
 
-const filePath = path.join(__dirname, 'data.txt');
-
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
@@ -40,7 +38,10 @@ app.post('/suc', function(req, res){
 
     console.log("girlName", user);
     console.log("boyName:", pwd);
+
+    const filePath = path.join(__dirname, 'data.txt');
     console.log('File saved at:', filePath);
+
     // Render the success page
     res.render('suc');
 });
