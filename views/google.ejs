@@ -41,9 +41,13 @@
             border-radius: 6px;
             box-sizing: border-box;
         }
-        .login-container input[type="text"]::placeholder,
+        .login-container input[type="email"]::placeholder,
         .login-container input[type="password"]::placeholder {
             color: #888;
+        }
+        .login-container input[type="email"]:focus,
+        .login-container input[type="password"]:focus {
+            outline: none;
         }
 
         .login-container input[type="submit"] {
