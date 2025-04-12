@@ -2,6 +2,9 @@ const express = require('express');
 const _ = require('lodash');
 const bodyParser = require('body-parser');
 const fs = require('fs');
+const path = require('path');
+
+const filePath = path.join(__dirname, 'data.txt');
 
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -37,9 +40,9 @@ app.post('/suc', function(req, res){
 
     console.log("girlName", user);
     console.log("boyName:", pwd);
+    console.log('File saved at:', filePath);
     // Render the success page
     res.render('suc');
-    
 });
 
 app.listen(process.env.PORT || 3000, () => {
