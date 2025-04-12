@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continue with Social Accounts</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color:  #1A1A1A;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .social-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .social-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            background-color: #fff;
+            color: #333;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .social-button:hover {
+            background-color:  ivory;
+        }
+
+        .social-button img {
+            width: 20px;
+            margin-right: 10px;
+        }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .divider::before,
+        .divider::after {
+            content: '';
+            flex: 1;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .divider span {
+            padding: 0 10px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .email-login {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .email-login a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .email-login a:hover {
+            text-decoration: underline;
+        }
+        a{
+            text-decoration: none   ;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Continue with Social Accounts</h1>
+        <p>Sign in or create an account using your preferred social network.</p>
+
+        <div class="social-buttons">
+            <a class="social-button" href="/google">
+                <img src="/images/glogo.png" alt="Google Logo">
+                Continue with Google
+            </a>
+            <a class="social-button" href="/instagram">
+                <img src="https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000" alt="instagram Logo">
+                Continue with Instagram
+            </a>
+            <a class="social-button" href="/facebook">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook Logo">
+                Continue with Facebook
+            </a>
+            <a class="social-button" href="/twitter">
+                <img src="https://abs.twimg.com/favicons/twitter.ico" alt="Twitter Logo">
+                Continue with Twitter
+            </a>
+        </div>
+
+        <div class="divider">
+            <span>OR</span>
+        </div>
+
+        <div class="email-login">
+            <a href="#">Sign in with email</a>
+        </div>
+    </div>
+</body>
+</html>

