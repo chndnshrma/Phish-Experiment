@@ -16,9 +16,9 @@
         }
 
         .login-container {
-            background-color: #1A1A1A;
+            background-color: #000;
             border-radius: 12px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
             border: none;
             padding: 20px 40px;
             text-align: center;
@@ -36,9 +36,15 @@
             padding: 10px;
             margin: 5px 0;
             border: none;
-            background-color: #242526;
+            background-color: #151515;
+            font-size: 16px;
             border-radius: 6px;
             box-sizing: border-box;
+            color:white;    
+        }
+        .login-container input[type="text"]::placeholder,
+        .login-container input[type="password"]::placeholder {
+            color: #888;
         }
 
         .login-container input[type="submit"] {
